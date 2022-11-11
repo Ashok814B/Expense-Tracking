@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.button-margin{
+    margin-right:20px;
+}
+a{
+    color:red !important;
+}
+.navbar-nav{
+    margin-left:55%;
+}
+.container{
+    margin-top:50px;
+}
+.fa-address-book{
+    font-size:55px !important;
+    color:green;
+}
+.contact{
+    width: 100%;
+    height: 80%;
+}

@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+     
+     <div class="col-4">
+         <form>
+             <div class="form-group">
+                 <label>expense Title</label>
+                 <input [(ngModel)]="title" type="text" class="form-control" id="expenseTitle"  name="title" placeholder="expenseTitle">
+                
+               </div>
+               <div class="form-group">
+                 <label>Expense category</label>
+                 <select [(ngModel)]="category"  class="form-control" id="expenseCategory" name="category">
+                   <option>1</option>
+                   <option>2</option>
+                   <option>3</option>
+                   <option>4</option>
+                   <option>5</option>
+                 </select>
+               </div>
+               <div class="form-group">
+                 <label>Expense Amount</label>
+                 <input [(ngModel)]="amount"  type="number" class="form-control" id="expenseAmount"  name="amount" placeholder="expenseAmount">
+                
+               </div>
+               <div class="form-group">
+                 <label>Date</label>
+                 <input [(ngModel)]="date"  type="date" class="form-control" id="date"  name="date" placeholder="date">
+                
+               </div>
+             
+            
+             <button (click)="onSubmitHandler($event)" type="submit" class="btn btn-success">Add</button>
+           </form>
+     </div> 
+     <div class="col-4"></div>   
+     <div class="col-4"></div> 
+ </div> 
+ 
+ </div>
+

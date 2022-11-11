@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+     <div class="col-4"></div> 
+     <div class="col-4">
+         <form #loginForm="ngForm"  (ngSubmit)="onLoginHandler(loginForm)">
+            
+               <div class="form-group">
+                 <label>Email</label>
+                 <input type="email" class="form-control" id="email" ngModel #emailForm="ngModel" name="email" placeholder="email" required email>
+                 <div *ngIf="(flag && emailForm.errors?.['required']) || (emailForm.invalid && emailForm.touched && emailForm.errors?.['required'])" class="alert alert-danger" role="alert">
+                  email is required
+                </div>
+                <!-- <div *ngIf="flag" class="alert alert-danger" role="alert">
+                  email is required
+                </div> -->
+                <div *ngIf="emailForm.invalid && emailForm.touched && emailForm.errors?.['email']" class="alert alert-danger" role="alert">
+                  email is invalid
+                </div>
+               </div>
+               <div class="form-group">
+                 <label>password</label>
+                 <input type="password" class="form-control" ngModel #passwordForm="ngModel" id="password" minlength="4" maxlength="10" name="password" placeholder="password" required>
+                 <div *ngIf="passwordForm.invalid && passwordForm.touched && passwordForm.errors?.['required']" class="alert alert-danger" role="alert">
+                  password is required
+                </div>
+                <div *ngIf="passwordForm.invalid && passwordForm.touched && passwordForm.errors?.['minlength']" class="alert alert-danger" role="alert">
+                  minlength is four
+                </div>
+               </div>
+             
+            
+             <button type="submit" class="btn btn-success">Submit</button>
+           </form>
+     </div> 
+     <div class="col-4"></div>   
+ </div> 
+ 
+ </div>
