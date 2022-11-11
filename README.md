@@ -28,6 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ##To run
 
-First connect the data base
-Then run the back-end file first by using `npm start`
-Then run front-end file
+First connect the data base.
+Then run the back-end file first by using `npm start`.
+Then run front-end file.
